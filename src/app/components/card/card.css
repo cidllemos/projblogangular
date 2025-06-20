@@ -1,0 +1,31 @@
+.container__card{
+    /* border: solid white 2px; */
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 615px;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.card_photo > img {
+    width: 100%;
+    min-width: 610;
+}
+
+.card_title > h1 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card_description {
+    margin-top: 10px;
+}
+
+.card_description > p > a  {
+    color: grey;
+}
+
+
