@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-mini',
@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './card-mini.css'
 })
 export class CardMini {
+  @Input()
+  cardminiPhotoCover: string = ""
+  
+  @Input()
+  cardminiTitle:string = ""
+
+  constructor(){}
 
 }
