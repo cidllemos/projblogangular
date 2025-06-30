@@ -1,16 +1,19 @@
 <div class="container__card">
+
+    <div class="card_title">
+        <h1><a [routerLink]="['content', Id]">{{ title }}</a></h1>
+    </div>
+
     <div class="card_photo">
-        <img src="{{ cardPhotoCover }}" 
+        <img src="{{ photoCover }}" 
         alt=""         
         height="437px"
         srcset="">
     </div>
     
-    <div class="card_title">
-        <h1><a href="">{{ cardTitle }}</a></h1>
-    </div>
+    
     <div class="card_description">
         <p>
-            <a>{{ cardDescription }}</a></p>
+            <a [routerLink]="['content', Id]">{{ description }}</a></p>
     </div>
 </div>

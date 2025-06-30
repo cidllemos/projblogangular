@@ -3,21 +3,22 @@
     margin-left: 35px;
     margin-right: 35px;
     width: 615px;
-    height: 650px;
+    height: 600px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
+
+.card_title > h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
 .card_photo > img {
     width: 100%;
     min-width: 610;
-}
-
-.card_title > h1 {
-    margin-top: 15px;
-    font-size: 20px;
 }
 
 .card_description {

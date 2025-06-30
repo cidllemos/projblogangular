@@ -1,7 +1,7 @@
 <div class="container__card-mini">
     <div class="card-mini__content">
         <div class="card-mini__photo">
-            <img src="{{ cardminiPhotoCover }}" alt="" srcset="">
+            <img src="{{ photoCover }}" alt="" srcset="">
         </div>
         <div class="card-mini__info">
             <div class="card-mini__date">
@@ -9,13 +9,13 @@
             </div>
             <div class="card-mini__description">
                 <p>
-                    <a>{{ cardminiTitle }}
+                    <a [routerLink]="['content', Id]">{{ description }}
                     </a>
                 </p>
             </div>
         </div>
     </div>
     <div class="card-mini__separator">
-            <hr>
-        </div>
+        <hr>
+    </div>
 </div>

@@ -1,19 +1,24 @@
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './card.html',
   styleUrl: './card.css'
 })
 export class Card {
   @Input()
-  cardPhotoCover:string = ""
+  photoCover:string = ""
   
   @Input()
-  cardTitle:string = ""
+  title:string = ""
   
   @Input()
-  cardDescription:string = ""
+  description:string = ""
+
+  @Input()
+  Id:string = "0"
+
   constructor(){}
 }
